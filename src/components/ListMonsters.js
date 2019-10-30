@@ -1,26 +1,42 @@
 import React from 'react';
 import './ListMonsters.css';
+import axios from 'axios';
 
 class ListMonsters extends React.Component {
-    render () {
-        
+
+    state = {
+        data: [],
+        isReady: false
+    }
+
+    componentDidMount() {
+        axios.get('https://hackathon-wild-hackoween.herokuapp.com/monsters').then((response) => {
+            this.setState({
+                data: response.data.monsters, isReady: true
+            })
+
+
+
+        })
+    }
+
+    render() {
         return (
+
             <div>
-                <img src='' alt ='' />
-                <div>
-                    <p>Name</p>
-                    <p>Level</p>
-                    <p>Attack</p>
-                    <p>Defense</p>
-                    <p>Description</p>
-                    
-                </div>
+                {this.state.isReady ? this.state.data.map(monster => (
+                    <div className="card">
+                        <p className="name">{monster.name}</p>
+                        <img className="image" src={monster.picture} alt="" />
+                        <p className="homeworld">Homeworld : {monster.level}</p>
+                    </div>
+                ))
+
+                    : 'ntm'}
             </div>
+
         )
     }
 }
-
-
-
 
 export default ListMonsters;
