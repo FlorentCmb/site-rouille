@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import { Switch, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'
+import Accueil from './components/Accueil'
+import Contact from './components/Contact'
+import MonsterList from './components/MonsterList'
+import Summoning from './components/Summoning'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Switch>
+        <Route exact path='/' component={Accueil} />
+        <Route path='/Contact' component={Contact} />
+        <Route path='/MonsterList' component={MonsterList} />
+        <Route path='/Summoning' component={Summoning} />
+      </Switch>
+
     </div>
   );
 }

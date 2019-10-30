@@ -1,0 +1,25 @@
+.Nav-header {
+    background-color: #282c34;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+    color: white;
+    list-style: none;
+}
+
+.Nav-list {
+    margin: 1em;
+    
+}
+
+li .logo {
+    width: 35px;
+    height: 35px;
+}
+
+li *{
+    text-decoration: none;
+}
