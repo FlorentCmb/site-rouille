@@ -1,5 +1,57 @@
-.listMonsters-card {
-    display : flex;
+* {
+    margin : 0px;
+    padding : 0px;
+    background : gray ;
+}
+
+.listMonsters-card {       
     border: solid ;
     margin-top : 20px;
+    padding : 2%;
+    display : flex;
+    justify-content: space-between;
 }
+
+.listMonsters-name {
+    font-size : 1.7vw;
+    color: red;
+}
+
+.listMonsters-stats {
+    font-size: 2vw;
+    background-color : black
+}
+
+/**Hover **/
+
+.imgParent {
+    position:relative;
+    background: black; 
+    
+}
+
+.imgParent:hover {
+    cursor:pointer;
+    color:red;
+}
+
+.overlay{
+    display:none;
+    text-align: center;
+    
+    
+}
+
+.imgParent:hover .overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    background: black;    
+    width:100%;
+    height:100%;
+    opacity:0.8;
+  }
+

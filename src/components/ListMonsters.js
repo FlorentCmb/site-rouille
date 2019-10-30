@@ -30,13 +30,26 @@ class ListMonsters extends React.Component {
                 {/* ici tableau */}
                 {this.state.isReady ? this.state.data.map(monster => (
                     <div className="listMonsters-card">
+
                         
-                        <img className="image" src={monster.picture} alt={monster.name} />
+
+                        <div className='imgParent'>
+                            <div>
+                                <img className="listMonsters-img" src={monster.picture} alt={monster.name} />
+                            </div>
+                            
+                            <div class='overlay'>
+                                <p className="listMonsters-stats">Lvl : {monster.level}</p>
+                                <p className="listMonsters-stats">Atk : {monster.attack}</p>
+                                <p className="listMonsters-stats">Defense : {monster.defense}</p>
+                            </div>                            
+                        </div>
+
+
                         <div>
-                            <p className="name">{monster.name}</p>
-                            <p className="homeworld">Lvl : {monster.level}</p>
-                            <p className="homeworld">Atk : {monster.attack}</p>
-                            <p className="homeworld">Defense : {monster.defense}</p>
+                            <p className="listMonsters-name">{monster.name}</p>
+
+
                             <p>Special atk : {monster.special}</p>
                             <p>Description : {monster.description}</p>
                             <p>Download the CV : <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Here</a></p>
