@@ -1,0 +1,5 @@
+.listMonsters-card {
+    display : flex;
+    border: solid ;
+    margin-top : 20px;
+}
