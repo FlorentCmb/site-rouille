@@ -25,34 +25,35 @@ class ListMonsters extends React.Component {
 
             <div>
 
-                <h2>Our candidates</h2>
+                <h2 className='listMonsters-title'>Our candidates</h2>
 
                 {/* ici tableau */}
                 {this.state.isReady ? this.state.data.map(monster => (
                     <div className="listMonsters-card">
 
-                        
-
                         <div className='imgParent'>
                             <div>
                                 <img className="listMonsters-img" src={monster.picture} alt={monster.name} />
                             </div>
-                            
+
                             <div class='overlay'>
                                 <p className="listMonsters-stats">Lvl : {monster.level}</p>
                                 <p className="listMonsters-stats">Atk : {monster.attack}</p>
                                 <p className="listMonsters-stats">Defense : {monster.defense}</p>
-                            </div>                            
+                            </div>
                         </div>
 
 
-                        <div>
-                            <p className="listMonsters-name">{monster.name}</p>
-
-
-                            <p>Special atk : {monster.special}</p>
-                            <p>Description : {monster.description}</p>
-                            <p>Download the CV : <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Here</a></p>
+                        <div className ='listMonsters-blabla'>
+                            <div className='listMonsters-name-parent'>
+                                <p className="listMonsters-name">{monster.name}</p>
+                            </div>
+                            
+                            <div className='listMonsters-bio-parents'>
+                                <p className="listMonsters-bio">Special atk : {monster.special}</p>
+                                <p className="listMonsters-bio">Description : {monster.description}</p>
+                                <p className="listMonsters-bio">Click here to summon : <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Here</a></p>
+                            </div>                            
                         </div>
 
 
