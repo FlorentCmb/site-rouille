@@ -1,15 +1,12 @@
 import React from 'react';
 import Accueil from './components/Accueil'
-import './components/Accueil.css'
 import './App.css';
-import ImageBackground from './components/ImageBackground';
-
+import About from './components/About'
 function App() {
   return (
     <div className="App">
-      <Accueil>
-        <ImageBackground />
-      </Accueil>
+      <Accueil />
+      <About />
     </div>
   );
 }

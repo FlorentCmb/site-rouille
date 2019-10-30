@@ -8,10 +8,7 @@ const Accueil = () => {
             <text className ="text">Site-Rouille</text>
         </div>
 
-        <div className="about">
-            <h2></h2>
-        </div>
-
+    
        
     )
 }
