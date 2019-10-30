@@ -1,0 +1,21 @@
+.Accueil {
+    background-color: #282c34;
+}
+
+.text {
+    z-index: 90;
+    position: absolute;
+    color: aliceblue;
+    font-size: 600%;
+    font-weight: bold;
+    left: 30%;
+    top: 30%;
+   
+    
+}
+img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
