@@ -6,9 +6,29 @@ import axios from 'axios';
 
 class ListMonsters extends React.Component {
 
+/* Tierlist which depends on lvl */
+
+    tierList(bidule)  {
+        if (bidule === '7') {
+            return 'S';
+        } if (bidule === '5') { 
+            return 'A';
+        } if (bidule === '4') {
+            return 'B';
+        } if (bidule === '3') {
+            return 'C';
+        } if (bidule === '2') {
+            return 'D';
+        } else {
+            return 'F';
+        }
+            
+    }
+
     state = {
         data: [],
-        isReady: false
+        isReady: false,
+        
     }
 
     componentDidMount() {
@@ -16,10 +36,7 @@ class ListMonsters extends React.Component {
             this.setState({
                 data: response.data.monsters, isReady: true
             })
-
-
-
-        })
+        })        
     }
 
     render() {
@@ -54,6 +71,7 @@ class ListMonsters extends React.Component {
                             <div className='listMonsters-bio-parents'>
                                 <p className="listMonsters-bio">Special skill : {monster.special}</p>
                                 <p className="listMonsters-bio">Description : {monster.description}</p>
+                                <p className="listMonsters-bio">Tierlist : {this.tierList(monster.level)} </p>
                                 <p className="listMonsters-bio">Interested ? Click here to summon : <a  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Summoning gate</a></p>
                             </div>                            
                         </div>
