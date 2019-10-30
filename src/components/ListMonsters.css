@@ -13,7 +13,7 @@
 /*big box*/
 
 .listMonsters-card {       
-    border: solid white ;
+    border: solid #CFB53B 1px; ;
     border-top-right-radius : 30px; 
     margin-top : 20px;
     padding : 2%;
@@ -21,6 +21,9 @@
     justify-content: space-between;
     margin-right : 5%;
     margin-left : 5%;
+    background-color: #9c0500;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+
 }
 
 
@@ -30,7 +33,7 @@
     
     display : flex;
     flex-direction : column;
-    width : 800%;
+    width : 80%;
 }
 
 .listMonsters-name-parent {
@@ -38,11 +41,17 @@
     display : flex;
     justify-content : center;
     align-items: center;
+    background-color: #9c0500;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    
 }
 
 .listMonsters-name {
-    font-size : 1.7vw;
-    color: red;    
+    font-size : 2.5vw;
+    color: black;
+    font-family: 'Great Vibes', cursive;
+    background-color: #9c0500;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");    
 }
 
 /*Biography box*/
@@ -51,15 +60,26 @@
     display: flex;
     flex-direction : column;
     height : 50%;
-    border : solid white;
+    border : solid black;
     text-align : left;
     padding : 20px;
     justify-content : center;
+    background-color: #9c0500;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+}
+
+.listMonsters-bio-parents a {
+    text-decoration : none;
+    color : #CFB53B;
+    background-color: #9c0500;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
 }
 
 .listMonsters-bio {
-    color : white;
+    color : black;
     font-size : 1.6vw;
+    background-color: #9c0500;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
 }
 
 /**Hover + img + stats **/

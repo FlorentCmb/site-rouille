@@ -1,6 +1,8 @@
 import React from 'react';
 import './ListMonsters.css';
+import '../index.css'
 import axios from 'axios';
+
 
 class ListMonsters extends React.Component {
 
@@ -50,9 +52,9 @@ class ListMonsters extends React.Component {
                             </div>
                             
                             <div className='listMonsters-bio-parents'>
-                                <p className="listMonsters-bio">Special atk : {monster.special}</p>
+                                <p className="listMonsters-bio">Special skill : {monster.special}</p>
                                 <p className="listMonsters-bio">Description : {monster.description}</p>
-                                <p className="listMonsters-bio">Click here to summon : <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Here</a></p>
+                                <p className="listMonsters-bio">Interested ? Click here to summon : <a  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Summoning gate</a></p>
                             </div>                            
                         </div>
 
