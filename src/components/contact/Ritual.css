@@ -1,0 +1,42 @@
+.ritual-container {
+    margin: 5vw;
+    color: rgb(223, 26, 26);
+    font-size: 1.8rem;
+    text-shadow: 
+        #000000 1px 1px,
+        #000000 -1px 1px, 
+        #000000 -1px -1px, 
+        #000000 1px -1px;
+}
+
+.gridIngredient {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.ingredient {
+    width: 100%;
+    height: 10vw;
+}
+
+.stepImages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stepImagesEnd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.stepImage {
+    width: 20%;
+}
+
+.stepImageEnd {
+    width: 20%;
+    margin-bottom: 2vw;
+}

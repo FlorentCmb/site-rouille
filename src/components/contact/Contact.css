@@ -17,11 +17,11 @@
 }
 
 .contact-components {
-    height: 40vw;
     width: 80vw;
     border: 5px solid transparent;
     border-image: url("../../assets/pictures/bloodTexture.jpg") 100/ 4px round;
     background: center url("../../assets/pictures/nurglebg.jpg");
+    filter: brightness(80%);
     background-size: cover;
 }
 
