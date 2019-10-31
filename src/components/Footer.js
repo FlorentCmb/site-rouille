@@ -3,8 +3,12 @@ import './Footer.css';
 
 class Footer extends React.Component {
     render () {
-        return()
+        return(
+            <div className ='footerContent'>
+                <p className ='neon'>Powered by 23L of Monster</p>
+            </div>
+        )
     }
 }
 
-export default import('child_process').ExecFileOptionsWithOtherEncoding;
+export default Footer;
