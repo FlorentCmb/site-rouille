@@ -11,9 +11,9 @@ class Navbar extends React.Component {
             <>
                 <ul className="Nav-header">
                     <li><NavLink activeClassName="active" exact to='/'><img className="logo" src="https://media.glassdoor.com/sqll/3411/monster-worldwide-squarelogo-1439837319741.png" alt="" /></NavLink></li>
-                    <li className="Nav-list"><NavLink activeClassName="active" to='/Contact'>Contact</NavLink></li>
-                    <li className="Nav-list"><NavLink activeClassName="active" to='/MonsterList'>MonsterList</NavLink></li>
-                    <li className="Nav-list"><NavLink activeClassName="active" to='/Summoning'>Summoning</NavLink></li>
+                    <li className="Nav-list1"><NavLink activeClassName="active" to='/Contact'>Contact</NavLink></li>
+                    <li className="Nav-list2"><NavLink activeClassName="active" to='/MonsterList'>MonsterList</NavLink></li>
+                    <li className="Nav-list3"><NavLink activeClassName="active" to='/Summoning'>Summoning</NavLink></li>
                 </ul>
             </>
         )

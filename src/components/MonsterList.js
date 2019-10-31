@@ -7,7 +7,8 @@ class MonsterList extends React.Component {
 
     render() {
         return (
-            <p>JAAJ</p>
+            <>
+            </>
 
         )
     }
