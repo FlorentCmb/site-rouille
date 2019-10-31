@@ -59,6 +59,7 @@ export default class Contact extends React.Component {
     }
 
     render(){
+        console.log(this.state)
         return(
             <div>
                 <img src={pentacle} alt="pentacle" />
@@ -74,7 +75,7 @@ export default class Contact extends React.Component {
                                 </div>
                         </div>
                         <hr/>
-                        <div className="sacrifice">
+                        <div className="sacrifice" onClick={this.goSacrifice}>
                             <h2>sacrifice</h2>
                                 <div className="container"> 
                                     <img className="nav-image" src={sacrifice} alt="human sacrifice"/>
@@ -84,7 +85,7 @@ export default class Contact extends React.Component {
                                 </div>
                         </div>
                         <hr/>
-                        <div className="phone">
+                        <div className="phone" onClick={this.goPhone}>
                             <h2>Phone</h2>
                                 <div className="container">
                                     <img className="nav-image" src={phone} alt="phone"/>
@@ -94,7 +95,7 @@ export default class Contact extends React.Component {
                                 </div>
                         </div>
                         <hr/>
-                        <div className="send-blood">
+                        <div className="send-blood" onClick={this.goSendBlood}>
                             <h2>Blood donation</h2>
                                 <div className="container">
                                     <img className="nav-image blood-image" src={blood} alt="blood bag"/>
@@ -105,10 +106,19 @@ export default class Contact extends React.Component {
                         </div>
                     </div>
                     <div className="contact-components">
-                        <Ritual className={this.state.ritual ? "ritualOn" : "ritualOff"} />
-                        <Sacrifice className={this.state.ritual ? "sacrificeOn" : "sacrificeOff"} />
-                        <Phone className={this.state.ritual ? "phoneOn" : "phoneOff"} />
-                        <SendBlood className={this.state.ritual ? "sendBloodOn" : "sendBloodOff"} />
+                        <div className={this.state.ritual ? "ritualOn" : "ritualOff"}>
+                            <Ritual />
+                        </div>
+                        <div className={this.state.sacrifice ? "sacrificeOn" : "sacrificeOff"}>
+                            <Sacrifice />
+                        </div>
+                        <div className={this.state.phone ? "phoneOn" : "phoneOff"}>
+                            <Phone />
+                        </div>
+                        <div className={this.state.blood ? "sendBloodOn" : "sendBloodOff"}>
+                            <SendBlood />
+                        </div>
+                        
                     </div>
                 </div>
             </div>

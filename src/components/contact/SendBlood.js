@@ -5,7 +5,7 @@ export default class SendBlood extends React.Component {
     render(){
         return(
             <div>
-                
+                ZZZZZZZZZZZZZZZZZZZZZZZZZZ
             </div>
         )
     }

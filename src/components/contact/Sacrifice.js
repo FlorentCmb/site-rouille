@@ -5,7 +5,7 @@ export default class Sacrifice extends React.Component {
     render(){
         return(
             <div>
-                
+                IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
             </div>
         )
     }

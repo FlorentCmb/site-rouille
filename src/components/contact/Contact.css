@@ -92,10 +92,10 @@
     align-items: center;
 }
 
-.ritualOn {
+.ritualOn, .sacrificeOn, .phoneOn, .sendBloodOn {
     display: flex;
 }
 
-.ritualOff {
+.ritualOff, .sacrificeOff, .phoneOff, .sendBloodOff {
     display: none;
 }
