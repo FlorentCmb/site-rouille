@@ -169,7 +169,8 @@
 
 .listMonsters-overlay{
     display:none;
-    text-align: center;    
+    text-align: center;
+      
 }
 
 .imgParent:hover .listMonsters-overlay {
