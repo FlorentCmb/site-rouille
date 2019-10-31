@@ -1,5 +1,6 @@
 import React from 'react'
 import Youtube from'react-youtube'
+import './Youtube.css'
 
 export default class Video extends React.Component {
     render(){
@@ -10,7 +11,7 @@ export default class Video extends React.Component {
             autoplay: 1
         };
         return(
-            <div >
+            <div className='video-parent'>
                 <h2 className="textVidéo">Typical day with our team </h2>
                 <Youtube
                     videoId="IJkBZSylSsw"

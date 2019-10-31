@@ -79,7 +79,7 @@ export default class Summoning extends React.Component {
                 <div className="SummonedMonster"></div>
 
                 <div className="Summoning-Section">
-                    <button className="Summoning-Button" type="button" onClick={this.summon}>{this.state.remainingShards > 0 ? 'Summon a monster !' : 'You can\'t summon monsters anymore...'}</button>
+                    <button className="Summoning-Button" type="button" onClick={this.summon} >{this.state.remainingShards > 0 ? 'Summon a monster !' : 'You can\'t summon monsters anymore...'}</button>
                     <p>(Cost 1 soul shard <img style={{ width: '20px', height: 'auto' }} src={soulShard} alt='Soul shard' />. Remaining soul shards : {this.state.remainingShards} <img style={{ width: '20px', height: 'auto' }} src={soulShard} alt='Soul shard' />)</p>
                 </div>
                 <hr />

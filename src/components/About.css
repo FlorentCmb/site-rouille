@@ -38,6 +38,7 @@ body{
   .flash.is-off {
     -webkit-animation: is-off 2s linear infinite !important;
             animation: is-off 2s linear infinite !important;
+    margin-bottom : 7%;
   }
   
   
@@ -494,8 +495,8 @@ body{
   }
 
   .vidéo{
-    margin: 20vw auto;
-    padding: 15vw;
+    margin-bottom : 7%;
+    
     
   }
 
