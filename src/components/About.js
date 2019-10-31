@@ -1,5 +1,6 @@
 import React from 'react'
 import Video from './Youtube'
+import Footer from './Footer'
 
 import './About.css'
 
@@ -17,6 +18,7 @@ const About = () => {
                 <div className="vidéo">
                 <Video />
                 </div>
+            <Footer/>
             </div>
         </div>
 
