@@ -48,7 +48,7 @@ class ListMonsters extends React.Component {
 
                 {/* ici tableau */}
                 {this.state.isReady ? this.state.data.map(monster => (
-                    <div className="listMonsters-card">
+                    <div className='listMonsters-card'>
 
                         <div className='imgParent'>
                             <div>
@@ -64,7 +64,7 @@ class ListMonsters extends React.Component {
 
 
                         <div className ='listMonsters-blabla'>
-                            <div className='listMonsters-name-parent'>
+                            <div className={monster.level === '7' ? 'listMonsters-name-parent-s' : 'listMonsters-name-parent'}>
                                 <p className="listMonsters-name">{monster.name}</p>
                             </div>
                             
