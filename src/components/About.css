@@ -492,4 +492,15 @@ body{
               transform: scaleX(1) scaleY(1) skewX(0deg);
     }
   }
+
+  .vidéo{
+    margin: 20vw auto;
+    padding: 15vw;
+    
+  }
+
+  .textVidéo{
+    color: white;
+    padding: 3vw;
+  }
   
