@@ -55,7 +55,7 @@ class ListMonsters extends React.Component {
                                 <img className={monster.level === '7' ? 'listMonsters-img-s' : 'listMonsters-img'} src={monster.picture} alt={monster.name} />
                             </div>
 
-                            <div class='overlay'>
+                            <div class='listMonsters-overlay'>
                                 <p className="listMonsters-stats">Lvl : {monster.level}</p>
                                 <p className="listMonsters-stats">Atk : {monster.attack}</p>
                                 <p className="listMonsters-stats">Defense : {monster.defense}</p>

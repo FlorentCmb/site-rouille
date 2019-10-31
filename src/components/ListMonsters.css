@@ -167,12 +167,12 @@
     color:red;
 }
 
-.overlay{
+.listMonsters-overlay{
     display:none;
     text-align: center;    
 }
 
-.imgParent:hover .overlay {
+.imgParent:hover .listMonsters-overlay {
     position:absolute;
     top:0;
     left:0;
