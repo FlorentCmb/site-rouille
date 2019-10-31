@@ -1,10 +1,16 @@
 // Importing librairies
 import React from 'react'
 import Axios from 'axios'
+// import Sound from 'react-sound'
 
-// Importing CSS and styles
+// Importing CSS and ressources
 import './Summoning.css'
 import summonEffect2 from '../pictures/summonEffect2.gif'
+import soulShard from '../pictures/soulShard.png'
+import summonVideo from '../pictures/beforeSummonEffect.mp4'
+import summonStarted from '../sounds/summonStarted.mp3'
+import summonComing from '../sounds/summonComing3.mp3'
+import summonFinished from '../sounds/summonFinished3.mp3'
 
 export default class Summoning extends React.Component {
 
@@ -12,7 +18,7 @@ export default class Summoning extends React.Component {
         monsters: null,
         isReady: false,
         summonedMonsters: [],
-        summonsRemaining: 5,
+        remainingShards: 5,
         toggleTeam: false,
         teamDisplay: 'none'
     }
@@ -26,28 +32,40 @@ export default class Summoning extends React.Component {
     }
 
     summon = () => {
-        // Checking if the user don't exceed the limit of the number of summons
-        if (this.state.summonsRemaining > 0) {
-            // Modifying the state in order to reduce the remaining summons
-            this.setState({ summonsRemaining: this.state.summonsRemaining - 1 })
 
-            // Creating a random number
-            const randomNumber = (Math.floor(Math.random() * 20))
+        if (this.state.remainingShards > 0) {
 
-            // Display the summoned monster
-            const monster = this.state.monsters[randomNumber]
+            document.querySelector('.SummonedMonster').innerHTML = `
+        <video autoplay="" loop="" muted="">
+            <source type="video/mp4" src=${summonVideo} >
+        </video>
+        <audio class="Summoning-Audio" ref=”audio_tag” src=${summonComing} controls autoPlay/>
+        <audio class="Summoning-Audio" ref=”audio_tag” src=${summonStarted} controls autoPlay/>
+        `
 
-            document.querySelector('.SummonedMonster').innerHTML = (
-                `<h3 class="Summoned-Title">You summoned...</h3>
+            setTimeout(() => {// Checking if the user don't exceed the limit of the number of summons
+                // Modifying the state in order to reduce the remaining summons
+                this.setState({ remainingShards: this.state.remainingShards - 1 })
+
+                // Creating a random number
+                const randomNumber = (Math.floor(Math.random() * 20))
+
+                // Display the summoned monster
+                const monster = this.state.monsters[randomNumber]
+
+                document.querySelector('.SummonedMonster').innerHTML = (
+                    `<h3 class="Summoned-Title">You summoned...</h3>
                     <div class="Summoned-Card">
                         <img src=${monster.picture} alt=${monster.name} />
                         <h3><strong>${monster.name}</strong></h3>
                         <p>${monster.special !== "Nothing special" ? "Special skill : \"" + monster.special + "\"" : "Doesn't have any special skill"}</p>
                     </div>
-                    <img src=${summonEffect2} class="summonEffect" alt="summon" />`)
+                    <img src=${summonEffect2} class="summonEffect" alt="summon" />
+                    <audio class="Summoning-Audio" ref=”audio_tag” src=${summonFinished} controls autoPlay/>`)
 
-            // Adding the new monster to the owned monsters list
-            this.setState({ summonedMonsters: this.state.summonedMonsters.concat(monster) })
+                // Adding the new monster to the owned monsters list
+                this.setState({ summonedMonsters: this.state.summonedMonsters.concat(monster) })
+            }, 5600)
         }
     }
 
@@ -59,10 +77,10 @@ export default class Summoning extends React.Component {
                 <div className="SummonedMonster"></div>
 
                 <div className="Summoning-Section">
-                    <button className="Summoning-Button" type="button" onClick={this.summon}>{this.state.summonsRemaining > 0 ? 'Summon a monster !' : 'You can\'t summon monsters anymore...'}</button>
-                    <p>(Summoning remaining : {this.state.summonsRemaining})</p>
+                    <button className="Summoning-Button" type="button" onClick={this.summon}>{this.state.remainingShards > 0 ? 'Summon a monster !' : 'You can\'t summon monsters anymore...'}</button>
+                    <p>(Cost 1 shard <img style={{ width: '20px', height: 'auto' }} src={soulShard} alt='Soul shard' />. Remaining shards : {this.state.remainingShards} <img style={{ width: '20px', height: 'auto' }} src={soulShard} alt='Soul shard' />)</p>
                 </div>
-
+                <hr />
                 <div className="Team-Container">
                     <h3>Your team :</h3>
                     <div className="Summoned-Team">
