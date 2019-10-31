@@ -5,9 +5,12 @@
 }
 
 .listMonsters-title {
-    font-size : 5vw;
-    margin-bottom : 100px;
+    font-size : 4vw;
+    margin-bottom : 30px;
     color : white;
+    text-align : left;
+    margin-left : 5%;
+    font-family: 'Staatliches', cursive;
 }
 
 /*big box*/
