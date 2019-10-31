@@ -76,7 +76,7 @@ export default class Contact extends React.Component {
                         </div>
                         <hr/>
                         <div className="sacrifice" onClick={this.goSacrifice}>
-                            <h2>sacrifice</h2>
+                            <h2>Sacrifice</h2>
                                 <div className="container"> 
                                     <img className="nav-image" src={sacrifice} alt="human sacrifice"/>
                                     <div className="overlay">

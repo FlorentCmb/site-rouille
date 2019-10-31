@@ -1,0 +1,10 @@
+.phone-container {
+    margin: 5vw;
+    color: rgb(223, 26, 26);
+    font-size: 1.8rem;
+    text-shadow: 
+        #000000 1px 1px,
+        #000000 -1px 1px, 
+        #000000 -1px -1px, 
+        #000000 1px -1px;
+}

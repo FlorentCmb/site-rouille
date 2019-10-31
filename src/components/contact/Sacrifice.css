@@ -1,0 +1,23 @@
+.sacrifice-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vw;
+    color: rgb(223, 26, 26);
+    font-size: 1.8rem;
+    text-shadow: 
+        #000000 1px 1px,
+        #000000 -1px 1px, 
+        #000000 -1px -1px, 
+        #000000 1px -1px;
+}
+
+a {
+    color: rgb(223, 26, 26);
+    text-shadow: 
+        #000000 1px 1px,
+        #000000 -1px 1px, 
+        #000000 -1px -1px, 
+        #000000 1px -1px;
+        margin-bottom: 2vw;
+}

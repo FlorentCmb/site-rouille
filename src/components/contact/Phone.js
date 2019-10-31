@@ -1,11 +1,11 @@
 import React from 'react'
-import './Sacrifice.css'
+import './Phone.css'
 
 export default class Phone extends React.Component {
     render(){
         return(
-            <div>
-                AAAAAAAAAAAAAAAAAAAA
+            <div className="phone-container">
+                <h2>You have 'Ritual' and 'Sacrifice'! Why would you need a phone to contact us ?</h2>
             </div>
         )
     }
