@@ -8,7 +8,6 @@ import Contact from './components/contact/Contact'
 import Summoning from './components/Summoning'
 import About from './components/About'
 import MonsterList from './components/MonsterList';
-import Footer from './components/Footer'
 
 
 
@@ -30,7 +29,6 @@ function App() {
         <Route path='/MonsterList' component={MonsterList} />
         <Route path='/Summoning' component={Summoning} />
       </Switch>
-      <Footer/>
 
 
     </div>

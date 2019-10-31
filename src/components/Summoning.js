@@ -3,14 +3,16 @@ import React from 'react'
 import Axios from 'axios'
 // import Sound from 'react-sound'
 
+import Footer from './Footer'
 // Importing CSS and ressources
-import './Summoning.css'
 import summonEffect2 from '../pictures/summonEffect2.gif'
 import soulShard from '../pictures/soulShard.png'
 import summonVideo from '../pictures/beforeSummonEffect.mp4'
 import summonStarted from '../sounds/summonStarted.mp3'
 import summonComing from '../sounds/summonComing3.mp3'
 import summonFinished from '../sounds/summonFinished3.mp3'
+
+import './Summoning.css'
 
 export default class Summoning extends React.Component {
 
@@ -93,6 +95,7 @@ export default class Summoning extends React.Component {
                             </div>))}
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

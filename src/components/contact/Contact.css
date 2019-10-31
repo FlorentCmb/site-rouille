@@ -1,4 +1,4 @@
-:root {
+.parentMaster {
     background: black;
 }
 
@@ -10,7 +10,6 @@
 
 .nav-contact {
     display: flex;
-    border-radius: 20px;
     border: 5px solid transparent;
     border-image: url("../../assets/pictures/bloodTexture.jpg") 100/ 4px round;
     width: 80vw;
@@ -25,16 +24,23 @@
     background-size: cover;
 }
 
+.container {
+    display: flex;
+    height: 10vw;
+}
+
 .ritual, .sacrifice, .phone, .send-blood {
     width: 10vw;
     color: rgb(221, 28, 28);
-    margin: 0 auto 0.5vw;
+    margin: 1vw auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 15vw;
+    height: 14vw;
     position: relative;
 }
+
+
 
 .nav-contact img {
     width: 100%;
@@ -42,8 +48,8 @@
     display: block;
 }
 
-.send-blood img {
-    margin-bottom: 2vw; 
+.nav-contact h2 {
+    margin-bottom: 1vw;
 }
 
 .nav-contact hr {

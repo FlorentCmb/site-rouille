@@ -1,8 +1,10 @@
 import React from 'react';
-import './MonsterList.css';
-import '../index.css'
 import axios from 'axios';
 
+import Footer from './Footer';
+
+import '../index.css'
+import './MonsterList.css';
 
 class MonsterList extends React.Component {
 
@@ -42,7 +44,7 @@ class MonsterList extends React.Component {
     render() {
         return (
 
-            <div>
+            <div className="monsterMaster">
 
                 <h2 className='listMonsters-title'>Our candidates</h2>
 
@@ -75,12 +77,11 @@ class MonsterList extends React.Component {
                                 <p className="listMonsters-bio">Interested ? Click here to summon : <a  href='./Summoning'>Summoning gate</a></p>
                             </div>                            
                         </div>
-
-
                     </div>
                 ))
-
-                    : 'ntm'}
+                
+                : 'ntm'}
+                <Footer />
             </div>
 
         )

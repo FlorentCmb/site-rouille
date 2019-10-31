@@ -5,6 +5,8 @@ import Ritual from './Ritual'
 import Sacrifice from './Sacrifice'
 import SendBlood from './SendBlood'
 
+import Footer from '../Footer'
+
 import blood from '../../assets/icons/blood-transfusion.svg'
 import pentacle from '../../assets/icons/pentacle-contact.gif'
 import phone from '../../assets/pictures/phoneOld.jpg'
@@ -61,7 +63,7 @@ export default class Contact extends React.Component {
     render(){
         console.log(this.state)
         return(
-            <div>
+            <div className="parentMaster">
                 <img src={pentacle} alt="pentacle" />
                 <div className="content-frame">
                     <div className="nav-contact">
@@ -121,6 +123,7 @@ export default class Contact extends React.Component {
                         
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }

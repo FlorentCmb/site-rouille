@@ -12,6 +12,10 @@
         #000000 1px -1px;
 }
 
+.sacrifice-container > * {
+    margin: 1.5vw;
+}
+
 a {
     color: rgb(223, 26, 26);
     text-shadow: 

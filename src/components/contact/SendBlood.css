@@ -1,10 +1,5 @@
-* {
-    margin : 0px;
-    padding : 0px;
-}
-
 .listOffers {
-    margin : 5vw;
+    margin : 3vw auto;
     color: rgb(223, 26, 26);
     font-size: 2.9rem;
     text-shadow: 
@@ -12,23 +7,23 @@
         #000000 -1px 1px, 
         #000000 -1px -1px, 
         #000000 1px -1px;
-    
+}
+
+.listOffers p {
+    margin-bottom: 1.5vw;
 }
 
 .bloodOffers {
-    margin-top : 7%;
-    border : solid red 2px;
-    height : 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border : solid red 3px;
+    height: 20vw;
+    margin: 0 20%;
 }
 
 .bloodText {
-    height : 30%;  
-    padding-top : 5%;
     font-size: 1.9rem;
-}
-
-.bloodButton {
-    height : 50%;     
 }
 
 .bloodOffers button {
