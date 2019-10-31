@@ -1,18 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
-import './App.css';
-import Contact from './components/contact/Contact';
-
-export default class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Contact />
-      </div>
-    );
-  }
-}
-=======
 
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
@@ -56,4 +42,3 @@ function App() {
 }
 
 export default App
->>>>>>> dev
