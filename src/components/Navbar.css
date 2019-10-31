@@ -2,12 +2,16 @@
     background-color: #282c34;
     min-height: 20vh;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* flex-direction: row; */
+    align-items: flex-start;
+    /* justify-content: center; */
     /* font-size: calc(10px + 2vmin); */
     color: white;
     list-style: none;
+    padding-left: 1vw;
+    font-size: 230%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 .Nav-list {
@@ -16,10 +20,11 @@
 }
 
 li .logo {
-    width: 35px;
-    height: 35px;
+    width: 10vw;
+    height: 10vw;
 }
 
 li *{
     text-decoration: none;
 }
+
