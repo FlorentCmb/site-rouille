@@ -1,0 +1,17 @@
+.listPayment {
+    display : flex;
+    justify-content : space-around;    
+    height : 700px;
+
+}
+
+
+.listOffers {
+    border : solid black;
+    padding : 5%;
+    display : flex;
+    flex-direction : column;
+    
+    
+
+}
