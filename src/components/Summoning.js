@@ -43,7 +43,7 @@ export default class Summoning extends React.Component {
         <audio class="Summoning-Audio" ref=”audio_tag” src=${summonStarted} controls autoPlay/>
         `
 
-            setTimeout(() => {// Checking if the user don't exceed the limit of the number of summons
+            setTimeout(() => {// Checking if the user doesn't exceed the limit of the number of summons
                 // Modifying the state in order to reduce the remaining summons
                 this.setState({ remainingShards: this.state.remainingShards - 1 })
 
