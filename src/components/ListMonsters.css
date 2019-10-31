@@ -13,7 +13,7 @@
 /*big box*/
 
 .listMonsters-card {       
-    border: solid #CFB53B 1px; ;
+    border: solid #CFB53B 1px ;
     border-top-right-radius : 30px; 
     margin-top : 20px;
     padding : 2%;
@@ -42,12 +42,11 @@
     justify-content : center;
     align-items: center;
     background-color: #9c0500;
-    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
-    
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");    
 }
 
 .listMonsters-name {
-    font-size : 2.5vw;
+    font-size : 2.8vw;
     color: black;
     font-family: 'Great Vibes', cursive;
     background-color: #9c0500;
@@ -84,11 +83,21 @@
 
 /**Hover + img + stats **/
 
+.listMonsters-img-s {
+    border: solid #CFB53B 3px ;
+    display : inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.listMonsters-img {
+    border : none;
+}
+
 .imgParent {
     position:relative;
     background: black;
-    margin-right: 2%;
-    
+    margin-right: 2%;    
 }
 
 .imgParent:hover {
@@ -116,6 +125,5 @@
 
 .listMonsters-stats {
     font-size: 2vw;
-    background-color : black
-    
+    background-color : black    
 }

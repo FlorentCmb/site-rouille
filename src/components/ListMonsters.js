@@ -10,7 +10,7 @@ class ListMonsters extends React.Component {
 
     tierList(bidule)  {
         if (bidule === '7') {
-            return 'S';
+            return 'S';            
         } if (bidule === '5') { 
             return 'A';
         } if (bidule === '4') {
@@ -52,7 +52,7 @@ class ListMonsters extends React.Component {
 
                         <div className='imgParent'>
                             <div>
-                                <img className="listMonsters-img" src={monster.picture} alt={monster.name} />
+                                <img className={monster.level === '7' ? 'listMonsters-img-s' : 'listMonsters-img'} src={monster.picture} alt={monster.name} />
                             </div>
 
                             <div class='overlay'>
@@ -71,7 +71,7 @@ class ListMonsters extends React.Component {
                             <div className='listMonsters-bio-parents'>
                                 <p className="listMonsters-bio">Special skill : {monster.special}</p>
                                 <p className="listMonsters-bio">Description : {monster.description}</p>
-                                <p className="listMonsters-bio">Tierlist : {this.tierList(monster.level)} </p>
+                                <p className="listMonsters-bio" id='letter'>Tierlist : {this.tierList(monster.level)} </p>
                                 <p className="listMonsters-bio">Interested ? Click here to summon : <a  href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'>Summoning gate</a></p>
                             </div>                            
                         </div>
